@@ -3008,8 +3008,8 @@ exports.GlobalWorkerOptions = GlobalWorkerOptions;
 "use strict";
 
 
-var pdfjsVersion = '2.0.508';
-var pdfjsBuild = '28360a01';
+var pdfjsVersion = '2.0.509';
+var pdfjsBuild = '34c64801';
 var pdfjsSharedUtil = __w_pdfjs_require__(0);
 var pdfjsDisplayAPI = __w_pdfjs_require__(118);
 var pdfjsDisplayTextLayer = __w_pdfjs_require__(126);
@@ -8456,7 +8456,7 @@ function _fetchDocument(worker, source, pdfDataRangeTransport, docId) {
   }
   return worker.messageHandler.sendWithPromise('GetDocRequest', {
     docId: docId,
-    apiVersion: '2.0.508',
+    apiVersion: '2.0.509',
     source: {
       data: source.data,
       url: source.url,
@@ -9874,8 +9874,8 @@ var InternalRenderTask = function InternalRenderTaskClosure() {
 }();
 var version, build;
 {
-  exports.version = version = '2.0.508';
-  exports.build = build = '28360a01';
+  exports.version = version = '2.0.509';
+  exports.build = build = '34c64801';
 }
 exports.getDocument = getDocument;
 exports.LoopbackPort = LoopbackPort;
@@ -10180,8 +10180,6 @@ var FontFaceObject = function FontFaceObjectClosure() {
         }
         return this.compiledGlyphs[character];
       } catch (error) {
-        console.log(error);
-        console.log('Error ignored');
         return function () {};
       }
     }
